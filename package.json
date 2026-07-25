@@ -1,0 +1,25 @@
+{
+  "name": "page-pulse",
+  "version": "1.0.0",
+  "description": "Page Pulse — a Node.js + Express backend service that audits web pages for SEO and content metrics.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build:frontend": "cd project && npm run build",
+    "dev:full": "echo 'Start the backend in one terminal (npm run dev) and the frontend in another (cd project && npm run dev). Vite proxies /api to port 4000.'",
+    "test": "npx jest --forceExit --detectOpenHandles"
+  },
+  "keywords": ["seo", "audit", "page-analysis", "express"],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
