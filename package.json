@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "build:frontend": "cd project && npm run build",
+    "build:frontend": "cd project && npm install && npm run build",
     "dev:full": "echo 'Start the backend in one terminal (npm run dev) and the frontend in another (cd project && npm run dev). Vite proxies /api to port 4000.'",
     "test": "npx jest --forceExit --detectOpenHandles"
   },
